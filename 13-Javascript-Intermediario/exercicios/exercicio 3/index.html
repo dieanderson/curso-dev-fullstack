@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-bottom: 30px;
+        }
+
+        input {
+            margin-top: 50px;
+        }
+
+        .cidades {
+            display: none;
+        }
+
+        .select-error {
+            border: 1px solid red;
+        }
+
+        .erro {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="form-cadastro" action="processa-cadastro.html">
+        <div>
+            <label>Estado
+                <select id="estado" name="estado">
+                    <option value="">-- Selecione --</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                </select>
+                <span class="erro"></span>
+            </label>
+        </div>
+
+        <div id="div-cidades" class="cidades">
+            <label>Cidades
+                <select id="cidades" name="cidades"></select>
+                <span class="erro"></span>
+            </label>
+        </div>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
